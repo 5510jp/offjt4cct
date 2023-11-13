@@ -29,6 +29,10 @@
 
 - https://github.com/mnaganu/business-card-management
 
+#### バッチ処理課題
+
+- [Spring boot Javaプログラムとして動かす](https://github.com/mnaganu/data-copy-batch)
+
 ##### 概説
 
 - [パッケージ構成はDDDに近い方式をとっている](http://terasolunaorg.github.io/guideline/current/ja/Overview/ApplicationLayering.html)
