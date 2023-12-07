@@ -32,6 +32,8 @@
 #### バッチ処理課題
 
 - [Spring boot Javaプログラムとして動かす](https://github.com/mnaganu/data-copy-batch)
+- [Spring Batch taskletを利用する様にしたもの](https://github.com/mnaganu/data-copy-batch-tasklet)
+- [Spring Batch chunkを利用する様にしたもの](https://github.com/mnaganu/data-copy-batch-chunk)
 
 ##### 概説
 
