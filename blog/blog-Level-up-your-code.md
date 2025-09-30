@@ -19,9 +19,12 @@
 
 ## システム設計についての参考書
 
--   現場で役立つシステム設計の原則 ~変更を楽で安全にするオブジェクト指向の実践技法
--   ドメイン駆動設計入門 ボトムアップでわかるドメイン駆動設計の基本
--   リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック (Theory in practice)
+- 現場で役立つシステム設計の原則 ~変更を楽で安全にするオブジェクト指向の実践技法  
+  https://gihyo.jp/book/2017/978-4-7741-9087-7
+- ドメイン駆動設計入門 ボトムアップでわかるドメイン駆動設計の基本  
+  https://www.shoeisha.co.jp/book/detail/9784798150727
+- リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック (Theory in practice)  
+  https://www.oreilly.com/library/view/ridaburukodo-yoriliang-ikodowoshu-kutamenosinpurudeshi-jian-de-natekunituku/9784873115658/
 
 Javaやるなら読んでおいた方が良いと思います。  
 この考え方での設計＆実装が求められる現場もありました。
