@@ -32,7 +32,7 @@ cct社向け研修
 ### 共通
 
 - [Github](./github/README.md)
-
+- [おすすめの書籍や記事](./blog/README.md)
 
 ## 資料
 
