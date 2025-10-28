@@ -49,6 +49,6 @@ Javaやるなら読んでおいた方が良いと思います。
 
 -   [Spring Bootが目指す基本的なプログラム構成（動画）](https://stechup.co.jp/springboot_pgstructure/)
 -   [【関心の分離／責務の分離】変更に強いプログラミング実践手法](https://docs.sakai-sc.co.jp/article/software-engineering/separation-of-concerns.html)
--   [関心の分離を意識した名前設計で巨大クラスを爆殺する](https://github.com/5510jp/offjt4cct/edit/main/blog/blog-Level-up-your-code.md)
+-   [関心の分離を意識した名前設計で巨大クラスを爆殺する](https://qiita.com/MinoDriven/items/37599172b2cd27c38a33)
 -   [Terasolna](https://terasolunaorg.github.io/guideline/current/ja/)
 
