@@ -163,23 +163,11 @@ Gemを使いこなすことは、優れた「指示」を書く技術、すな�
 
 AIは「指示」の書き方次第で、その能力を最大限に発揮します。以下の公式リソースを参考に、Gemの「指示」を磨き込んでみてください。
 
-#### 1. 【公式】カスタム Gem 作成のヒント (Gemini アプリ ヘルプ)
-
-まずは、Googleの公式ヘルプで「Gem」の指示の書き方に関するヒントを確認しましょう。どのような指示が効果的か、基本的な考え方がまとまっています。
-
-[リンク] https://support.google.com/gemini/answer/15235603
-
-#### 2. 【公式】生成 AI のプロンプト エンジニアリング (Google for Developers)
-
-より高度なAIの活用術として、プロンプトエンジニアリングのベストプラクティスを学べる公式ガイドです。「役割（ペルソナ）を与える」「例（Few-shot）を示す」といった、Gemの指示にも応用できる具体的なテクニックが解説されています。
-
-[リンク] https://developers.google.com/machine-learning/resources/prompt-eng?hl=ja
-
-#### 3. 【公式】AI のプロンプト エンジニアリング ガイド (Google Cloud)
-
-こちらはGoogle Cloudが提供するガイドで、明確な目標設定や出力形式の定義など、ビジネスシーンでの活用を想定したプロンプトの設計思想を学べます。
-
-[リンク] https://cloud.google.com/discover/what-is-prompt-engineering?hl=ja
+| リソース名 | 概要 | リンク |
+| :--- | :--- | :--- |
+| **1.【公式】カスタム Gem 作成のヒント** | Gemini（Gem）の指示の書き方に関する基本的なヒントや考え方がまとまっています。まずはここから確認するのがおすすめです。 | `https://support.google.com/gemini/answer/15235603` |
+| **2.【公式】生成 AI のプロンプト エンジニアリング** | Google開発者向け。AIに役割を与える方法や例を示す方法など、Gemの指示にも応用できる具体的なテクニックが解説されています。 | `https://developers.google.com/machine-learning/resources/prompt-eng?hl=ja` |
+| **3.【公式】AI のプロンプト エンジニアリング ガイド** | Google Cloud提供。ビジネスシーンでの活用を想定した、より高度なプロンプト設計思想（目標設定、出力形式の定義など）を学べます。 | `https://cloud.google.com/discover/what-is-prompt-engineering?hl=ja` |
 
 # まとめ
 
