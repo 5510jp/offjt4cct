@@ -3,7 +3,7 @@
 * 2025/11/04 [【作業効率UP】Geminiを“自分専用”に育てる！「Gem」機能活用術](blog-Customize-Gemini.md)
 * 2025/10/21 [もうレビューで消耗しない！GitHub Copilot活用法](blog-copilot-for-code-quality.md)
 * 2025/10/21 [資格を取ろうか迷ってる人に役立つかもしれない動画を見つけたので、シェアしておきます](https://www.youtube.com/watch?v=0kFkqZup8SA)
-* 2025/10/21 皆さんはWebAssemblyという技術を聞いたことがあるでしょうか？
+* 2025/10/16 皆さんはWebAssemblyという技術を聞いたことがあるでしょうか？
   <details>
     <summary>開く</summary>
     皆さんはWebAssemblyという技術を聞いたことがあるでしょうか？<br>
