@@ -16,6 +16,3 @@
   </details>
 * 2025/10/08 [君のコードをレベルアップさせよう](blog-Level-up-your-code.md)
 * 2025/09/26 [勉強を“続ける”ためのコツがまとまった良記事を紹介します](https://qiita.com/official-columns/interview/interview_udemy_20170906/)
-
-
-[WebAssembly の過去・現在・未来](https://qiita.com/sachaos/items/e3a613b018febb898fde)
