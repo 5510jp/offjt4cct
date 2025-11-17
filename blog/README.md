@@ -1,6 +1,7 @@
 # ここにはおすすめの書籍や記事を残しておきます
 
 * 2025/11/18 [テキストで図が描ける！「Mermaid記法」入門](blog-mermaid-markup.md)
+* 2025/11/12 [AWS 運動会 - 組体操で学ぶクラウド](https://youtu.be/zWv4bGBqCeg?si=KccTqUe32wY_WFvs)
 * 2025/11/04 [【作業効率UP】Geminiを“自分専用”に育てる！「Gem」機能活用術](blog-Customize-Gemini.md)
 * 2025/10/21 [もうレビューで消耗しない！GitHub Copilot活用法](blog-copilot-for-code-quality.md)
 * 2025/10/21 [資格を取ろうか迷ってる人に役立つかもしれない動画を見つけたので、シェアしておきます](https://www.youtube.com/watch?v=0kFkqZup8SA)
