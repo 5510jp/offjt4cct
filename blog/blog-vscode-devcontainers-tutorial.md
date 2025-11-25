@@ -1,4 +1,4 @@
-# 【究極のクリーン環境】JavaもGradleもPCに入れない！VS Code「Dev Containers」実践ガイド
+# 【クリーンな開発環境】JavaもGradleもPCに入れない！VS Code「Dev Containers」実践ガイド
 
 皆さんは、新しいプロジェクトに参加したり、PCを新調したりした際に、環境構築でこんな悩みを抱えたことはありませんか？
 
