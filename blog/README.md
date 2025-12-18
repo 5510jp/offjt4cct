@@ -1,5 +1,17 @@
 # ここにはおすすめの書籍や記事を残しておきます
 
+* 2025/12/18 [NotebookLMのカスタム指示の拡張から、色々なことを考える](https://l.smartnews.com/m-6MRZQz5e/umLczJ)
+  <details>
+    <summary>開く</summary>
+    学んだこと、感想、メモ<br>
+    ・NotebookLMのチャットカスタマイズの文字数制限が500文字→10,000文字に引き上げられた（12/5）<br>
+    ・「1. マニュアル活用時のカスタマイズ例」とか参考にできそう。<br>
+    ・AIにカスタマイズ内容考えてもらうのもだけど、いろんな近しい事例から使えそうなことを真似することも大切。<br>
+    ・「作成した側」と「利用する側」でカスタマイズ内容を漏れなく共有することで、回答内容がより欲しいものになる。<br>
+    ・カスタマイズ指示の内容を考えるステップからメンバー内でコミュニケーションを取ることで、チームの大切にしている価値観や方向性を再確認できる。<br>
+  </details>
+* 2025/12/18 [【Excel】夢のような関数『LET』！使い方と活用例！【解説】](https://youtu.be/qlDx6mIUMJU?si=qnQVMNpGVl-Hwzvw)
+* 2025/12/18 [Googleが新AI｢Gemini 3｣をリリース。｢推論とマルチモーダルにおいて世界最強｣と自負](https://www.gizmodo.jp/2025/11/google_gemini_3_released.html)
 * 2025/12/09 [心理的安全性を高めるコードレビューのコメント術](code-review-comment-tips.md)
 * 2025/11/25 [【究極のクリーン環境】JavaもGradleもPCに入れない！VS Code「Dev Containers」実践ガイド](blog-vscode-devcontainers-tutorial.md)
 * 2025/11/18 [テキストで図が描ける！「Mermaid記法」入門](blog-mermaid-markup.md)
