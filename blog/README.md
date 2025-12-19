@@ -12,6 +12,11 @@
   </details>
 * 2025/12/18 [【Excel】夢のような関数『LET』！使い方と活用例！【解説】](https://youtu.be/qlDx6mIUMJU?si=qnQVMNpGVl-Hwzvw)
 * 2025/12/18 [Googleが新AI｢Gemini 3｣をリリース。｢推論とマルチモーダルにおいて世界最強｣と自負](https://www.gizmodo.jp/2025/11/google_gemini_3_released.html)
+* 2025/12/09 [コーディングをやめて、アーキテクチャを始めましょう: Google Antigravity + Cloud Run](https://www.youtube.com/watch?v=ooHyVrYY_2U)
+  <details>
+    <summary>開く</summary>
+    興味が出たら、Youtubeで検索すると解説動画がいっぱいあります。
+  </details>
 * 2025/12/09 [心理的安全性を高めるコードレビューのコメント術](code-review-comment-tips.md)
 * 2025/11/25 [【究極のクリーン環境】JavaもGradleもPCに入れない！VS Code「Dev Containers」実践ガイド](blog-vscode-devcontainers-tutorial.md)
 * 2025/11/18 [テキストで図が描ける！「Mermaid記法」入門](blog-mermaid-markup.md)
