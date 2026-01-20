@@ -1,5 +1,7 @@
 # ここにはおすすめの書籍や記事を残しておきます
 
+
+* 2026/01/20 [思考法（思考力）の紹介です](./blog-framework-overview.md)
 * 2025/12/18 [NotebookLMのカスタム指示の拡張から、色々なことを考える](https://l.smartnews.com/m-6MRZQz5e/umLczJ)
   <details>
     <summary>開く</summary>
