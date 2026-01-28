@@ -72,7 +72,7 @@ Node.jsとExpressを使って、要件定義書に従ってアプリを作成し
 
 ### ステップ2：しばらく待つとコードが生成されます
 
-[デモ動画](./blog-copilot-agent-demo.mov)
+[デモ動画(Gif)](./blog-copilot-agent-demo.gif)
 
 * 簡易ブラウザまで起動したら動作確認を行う
 * 仕様通りに動かないと箇所をCopilot Edits（またはチャット欄）で指摘して調整する
