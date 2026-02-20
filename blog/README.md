@@ -1,5 +1,11 @@
 # ここにはおすすめの書籍や記事を残しておきます
 
+## 記事
+* 2026/02/17 [Salesforceが「Heroku」の新機能開発を停止　Agentforceに資源集中](https://cloud.watch.impress.co.jp/docs/column/techwatch/2086098.html)
+  <details>
+    <summary>開く</summary>
+    Paasサービスとして有名なHerokuがAIに集中するために段階的に廃止になるかもというニュース<br>時代の移り変わりを感じます…
+  </details>
 * 2026/01/28 [【AIペアプロ】Copilotに「要件定義書」を丸投げしてコードを書いてもらおう](./blog-copilot-agent.md)
 * 2026/01/20 [思考法（思考力）の紹介です](./blog-framework-overview.md)
 * 2025/12/18 [NotebookLMのカスタム指示の拡張から、色々なことを考える](https://l.smartnews.com/m-6MRZQz5e/umLczJ)
@@ -39,3 +45,10 @@
   </details>
 * 2025/10/08 [君のコードをレベルアップさせよう](blog-Level-up-your-code.md)
 * 2025/09/26 [勉強を“続ける”ためのコツがまとまった良記事を紹介します](https://qiita.com/official-columns/interview/interview_udemy_20170906/)
+
+## 書籍
+* [Java17 Gold 黒本](https://www.amazon.co.jp/%E5%BE%B9%E5%BA%95%E6%94%BB%E7%95%A5Java-SE-17-Gold%E5%95%8F%E9%A1%8C%E9%9B%86%EF%BC%BB1Z0-826%EF%BC%BD%E5%AF%BE%E5%BF%9C-%E5%BF%97%E8%B3%80/dp/429502371X)
+* [現場で役立つシステム設計の原則 〜変更を楽で安全にするオブジェクト指向の実践技法](https://gihyo.jp/book/2017/978-4-7741-9087-7)
+* [ドメイン駆動設計入門 ボトムアップでわかる！ドメイン駆動設計の基本](https://www.shoeisha.co.jp/book/detail/9784798150727)
+* [リーダブルコード ―より良いコードを書くためのシンプルで実践的なテクニック](https://www.oreilly.com/library/view/ridaburukodo-yoriliang-ikodowoshu-kutamenosinpurudeshi-jian-de-natekunituku/9784873115658/)
+* [良いコードを書く技術─⁠─読みやすく保守しやすいプログラミング作法](https://gihyo.jp/book/2021/978-4-297-12048-1)
