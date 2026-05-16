@@ -27,12 +27,12 @@
 **Ollama（オラマ）** は、複雑な設定なしにローカルPCでLLMを動かせる非常に便利なツールです。
 
 1. **インストール:** [Ollamaの公式サイト(https://ollama.com/)](https://ollama.com/) にアクセスし、お使いのOS（Windows / macOS / Linux）向けのインストーラーをダウンロードして実行します。
-2. **モデルのダウンロード:** インストール完了後、ターミナル（またはコマンドプロンプト）を開き、コーディングに特化したAIモデルをダウンロードします。今回は軽量で優秀な `qwen2.5-coder` を使用します。
+2. **モデルのダウンロード:** インストール完了後、ターミナル（またはコマンドプロンプト）を開き、コーディングに特化したAIモデルをダウンロードします。今回は使いやすい `gemma4:e2b` を使用します。コードに特化したい場合は `qwen2.5-coder:7b` を使ってみてください。
 
 以下のコマンドをコピー＆ペーストして実行してください。
 
 ```bash
-ollama run qwen2.5-coder:7b
+ollama run gemma4:e2b
 ```
 *※初回実行時はモデルデータのダウンロードが行われるため、数分程度かかります。ダウンロードが終わると対話モードになりますが、今回はVS Codeから使うため `Ctrl + D` で終了して構いません。裏側でOllamaが待機状態になります。*
 
@@ -45,17 +45,22 @@ ollama run qwen2.5-coder:7b
 
 以下の設定例を参考に、`"models"` の配列部分を書き換えてください。
 
-```json
-{
-  "models": [
-    {
-      "title": "Ollama - Qwen2.5 Coder",
-      "provider": "ollama",
-      "model": "qwen2.5-coder:7b",
-      "apiBase": "http://localhost:11434"
-    }
-  ]
-}
+```yaml
+name: Local Config
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Gemma 4 E2B
+    provider: ollama
+    model: gemma4:e2b
+    apiBase: http://127.0.0.1:11434
+    contextLength: 16384
+    roles:
+      - chat
+      - edit
+      - apply
+      - autocomplete
 ```
 
 ### ステップ3: チュートリアル！エージェント機能でFastAPI環境を自動構築してみよう
@@ -65,7 +70,13 @@ ollama run qwen2.5-coder:7b
 単なるコードの生成だけでなく、ターミナルでのコマンド実行までAIがアシストしてくれます。VS Codeで空のフォルダを開き、Continueのチャットウィンドウから以下のステップを進めてください。
 
 **① 環境の初期化（Scaffolding）**
-まずは仮想環境の作成とライブラリのインストールを指示します。
+
+作業準備
+
+> 作業フォルダを作成して、READ.ME ファイルを作成しておきます。
+> これによりAIが作業場所を間違えなくなります。
+
+VSCode仮想を起動して、**「Continue」** のチャットを開いて下記のプロンプトを入力して、仮想環境の作成とライブラリのインストールを指示します。
 
 > **プロンプト:**
 > `@codebase Pythonの仮想環境(venv)を作成し、fastapiとuvicornをインストールしてください。`
