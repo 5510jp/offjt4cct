@@ -13,7 +13,9 @@
 この記事では、AIを分割して動かすメリットと、ノンプログラマーでも今すぐ試せる「フォルダ構成による疑似組織モデル」のチュートリアルを分かりやすく解説します。
 
 > 🚩 チュートリアルはスキップして動かしてみたい方は、下記にサンプルを作成してありますので、clone して動かしてみて下さい。  
-> [Publisher Agent System (ブログ記事自動生成マルチエージェント)](https://github.com/murcubcc110/publisher)
+> [Publisher Agent System (ブログ記事自動生成マルチエージェント)](https://github.com/murcubcc110/publisher)  
+> Codex や Antigravity などの エージェントでフォルダを開いて、最初に「オンボーディングを開始して下さい」として下さい。  
+> あとは、リポジトリの README.md の使い方で指示を出してみて下さい。
 
 ---
 
