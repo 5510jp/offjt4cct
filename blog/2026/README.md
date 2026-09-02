@@ -1,6 +1,7 @@
 # ここにはおすすめの書籍や記事を残しておきます
 
 ## 記事
+* [2026/09/02 「AIっぽい文章」を減らす：4つの推敲Skill比較と安全に導入する方法](./blog-ai-writing-skills-guide.md)
 * [2026/08/06 30日で消えるAIの履歴を救う！ローカル履歴永続化ツール「CTX」の紹介](./blog-ctx-local-history-tool.md)
 * [2026/07/06 LangGraph で学ぶマルチエージェント構築：ループと状態管理の実装入門](./blog-learning-langgraph-multi-agent.md)
 * [2026/06/11 AIをフォルダで組織化！マルチエージェントのノンコード設計ガイド](./blog-multi_agent_benefits.md)
