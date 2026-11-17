@@ -229,18 +229,46 @@ if __name__ == "__main__":
 
 #### 3. 起動と動作確認
 
-実装したサーバーの動作確認には、公式の開発用インスペクター（MCP Inspector）が利用できます。
+実装したサーバーの動作確認には、公式の開発用インスペクター（MCP Inspector）の **CLI モード（`--cli` オプション）** が利用できます。ブラウザを起動せず、ターミナル上のコマンドから直接ツールやリソースの応答を検証できます。
+
+```bash
+# 1. 公開されているツール一覧（スキーマ）の確認
+npx @modelcontextprotocol/inspector --cli python server.py --method tools/list
+
+# 2. Toolsの実行: search_employee に引数を渡して社員情報を検索
+npx @modelcontextprotocol/inspector --cli python server.py \
+  --method tools/call \
+  --tool-name search_employee \
+  --tool-arg keyword=開発部
+
+# 3. Resourcesの取得: 社内リモートワーク運用規程を読み込み
+npx @modelcontextprotocol/inspector --cli python server.py \
+  --method resources/read \
+  --uri internal://policy/remote-work
+
+# 4. Promptsの実行: 新入社員向けプロンプトテンプレートを生成
+npx @modelcontextprotocol/inspector --cli python server.py \
+  --method prompts/get \
+  --prompt-name onboarding_inquiry \
+  --prompt-arg employee_name=田中
+```
+<details>
+  <summary>ブラウザ上でインスペクター（MCP Inspector）の利用も可能です。</summary>
 
 ```bash
 # MCP Inspectorを起動してブラウザから対話テスト
 npx @modelcontextprotocol/inspector python server.py
 ```
 
-ブラウザ上でインスペクター（`http://localhost:5173`）が開き、サーバーが公開する能力を個別にテストできます。
+ブラウザ上でインスペクター（`http://localhost:xxxx`）が開き、サーバーが公開する能力を個別にテストできます。
 
 - **Toolsタブ**: `search_employee` に引数 `{"keyword": "開発部"}` を指定して実行し、社員データが返却されることを確認します。
 - **Resourcesタブ**: `internal://policy/remote-work` を選択し、規程テキストが表示されることを確認します。
 - **Promptsタブ**: `onboarding_inquiry` に任意の名前を入力し、整形されたプロンプトが生成されることを確認します。
+</details>
+
+<details>
+  <summary>Claude Desktopから連携する場合は、設定ファイル（`claude_desktop_config.json`）に以下の記述を追加します。</summary>
 
 Claude Desktopから連携する場合は、設定ファイル（`claude_desktop_config.json`）に以下の記述を追加します。
 
@@ -254,6 +282,7 @@ Claude Desktopから連携する場合は、設定ファイル（`claude_desktop
   }
 }
 ```
+</details>
 
 > ⚠️ **開発時の注意点: stdio通信における標準出力の汚染**  
 > stdioトランスポートでは、標準出力（stdout）がJSON-RPCメッセージの通信路として使われます。コード内で `print()` などの標準出力を実行すると、JSON-RPCメッセージが破損して通信エラーの原因になります。デバッグ出力を行う場合は、必ず `sys.stderr.write()` を使うか、標準の `logging` モジュール（デフォルトでstderrへ出力）を使用してください。
