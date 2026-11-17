@@ -1,7 +1,7 @@
 # ここにはおすすめの書籍や記事を残しておきます
 
 ## 記事
-* [2026/11/11 MCP（Model Context Protocol）入門：LLMと社内データソース・ツールを標準仕様で接続するアーキテクチャ](./blog_mcp_introduction.md)
+* [2026/11/17 MCP（Model Context Protocol）入門：LLMと社内データソース・ツールを標準仕様で接続するアーキテクチャ](./blog_mcp_introduction.md)
 * [2026/11/10 AIの自己修正を過信しない：外部チェックを組み込む「ハーネス」実践ガイド](./blog_guide_harness_external_check.md)
 * [2026/09/02 「AIっぽい文章」を減らす：4つの推敲Skill比較と安全に導入する方法](./blog-ai-writing-skills-guide.md)
 * [2026/08/06 30日で消えるAIの履歴を救う！ローカル履歴永続化ツール「CTX」の紹介](./blog-ctx-local-history-tool.md)
