@@ -40,14 +40,14 @@ MCPは、ハードウェアにおけるUSB-Cのように、AIモデルと外部�
 
 ```mermaid
 flowchart LR
-    subgraph 従来: N×Mの密結合
+    subgraph sub1["従来: N×Mの密結合"]
         direction TB
         C1[Claude Desktop] -.->|個別実装| T1[社内DB]
         C1 -.->|個別実装| T2[社内Slack]
         C2[エージェントIDE] -.->|個別実装| T1
         C2 -.->|個別実装| T2
     end
-    subgraph MCP: N+Mの標準規格
+    subgraph sub2["MCP: N+Mの標準規格"]
         direction TB
         M1[Claude Desktop] ===|標準プロトコル| B((MCP))
         M2[エージェントIDE] ===|標準プロトコル| B
