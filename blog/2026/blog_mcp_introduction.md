@@ -229,8 +229,10 @@ if __name__ == "__main__":
 
 #### 3. 起動と動作確認
 
-実装したサーバーの動作確認には、公式の開発用インスペクター（MCP Inspector）の **CLI モード（`--cli` オプション）** が利用できます。ブラウザを起動せず、ターミナル上のコマンドから直接ツールやリソースの応答を検証できます。
+実装したサーバーの動作確認には、公式の開発用インスペクター（MCP Inspector）の **CLI モード（`--cli` オプション）** が利用できます。
+ブラウザを起動せず、ターミナル上のコマンドから直接ツールやリソースの応答を検証できます。
 
+##### パターンA：MCP Inspector の CLI モードで検証する（手軽な単発テスト）
 ```bash
 # 1. 公開されているツール一覧（スキーマ）の確認
 npx @modelcontextprotocol/inspector --cli python server.py --method tools/list
@@ -252,6 +254,59 @@ npx @modelcontextprotocol/inspector --cli python server.py \
   --prompt-name onboarding_inquiry \
   --prompt-arg employee_name=田中
 ```
+各コマンドを実行すると、MCPサーバーから返却された結果がJSON形式で標準出力に表示されます。
+
+##### パターンB：Python SDK のクライアントから実行する（Node.js不要・自動テスト向け）
+
+npx（Node.js環境）を使わず Python 環境のみで完結させたい場合や、CI/CD に組み込む自動テストを作成する場合は、SDK付属の ClientSession を使った検証スクリプトを用意して実行します。
+
+以下のコードを test_client.py として保存します。
+```python
+import asyncio
+from mcp import ClientSession, StdioServerParameters
+from mcp.client.stdio import stdio_client
+
+async def main() -> None:
+    # server.py をサブプロセスとして起動・接続
+    server_params = StdioServerParameters(command="python", args=["server.py"])
+
+    async with stdio_client(server_params) as (read, write):
+        async with ClientSession(read, write) as session:
+            # 1. 初期化ハンドシェイク
+            await session.initialize()
+
+            # 2. Toolsの実行
+            tool_result = await session.call_tool(
+                "search_employee", {"keyword": "開発部"}
+            )
+            print("=== Tools 実行結果 ===")
+            print(tool_result.content[0].text)
+
+            # 3. Resourcesの取得
+            resource_result = await session.read_resource(
+                "internal://policy/remote-work"
+            )
+            print("\n=== Resources 取得結果 ===")
+            print(resource_result.contents[0].text)
+
+            # 4. Promptsの取得
+            prompt_result = await session.get_prompt(
+                "onboarding_inquiry", {"employee_name": "田中"}
+            )
+            print("\n=== Prompts 生成結果 ===")
+            print(prompt_result.messages[0].content.text)
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+作成したスクリプトを実行して、各プリミティブの応答が標準出力に表示されることを確認します。
+
+```bash
+python test_client.py
+```
+
+##### (補足)
+
 <details>
   <summary>ブラウザ上でインスペクター（MCP Inspector）の利用も可能です。</summary>
 
